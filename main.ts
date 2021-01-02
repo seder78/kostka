@@ -47,7 +47,12 @@ function _6 () {
         `)
 }
 input.onButtonPressed(Button.A, function () {
+    for (let index = 0; index < 6; index++) {
+        zatreseni()
+        music.playTone(262, music.beat(BeatFraction.Sixteenth))
+    }
     zatreseni()
+    music.playTone(523, music.beat(BeatFraction.Sixteenth))
 })
 function _5 () {
     basic.showLeds(`
