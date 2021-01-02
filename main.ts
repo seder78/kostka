@@ -1,4 +1,3 @@
-let cislo = 0
 function _7 () {
     basic.showLeds(`
         . . . . .
@@ -9,7 +8,7 @@ function _7 () {
         `)
 }
 function zatreseni () {
-    cislo = randint(1, 7)
+    cislo = randint(1, 6)
     if (cislo == 1) {
         _1()
     } else if (cislo == 2) {
@@ -64,7 +63,7 @@ function _3 () {
         . . . . .
         `)
 }
-input.onGesture(Gesture.Shake, function () {
+input.onSound(DetectedSound.Loud, function () {
     zatreseni()
 })
 function _4 () {
@@ -85,6 +84,8 @@ function _1 () {
         . . . . .
         `)
 }
+let cislo = 0
+input.setSoundThreshold(SoundThreshold.Loud, 180)
 basic.forever(function () {
 	
 })
