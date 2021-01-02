@@ -1,3 +1,4 @@
+let cislo = 0
 function _7 () {
     basic.showLeds(`
         . . . . .
@@ -45,6 +46,9 @@ function _6 () {
         . . . . .
         `)
 }
+input.onButtonPressed(Button.A, function () {
+    zatreseni()
+})
 function _5 () {
     basic.showLeds(`
         . . . . .
@@ -63,9 +67,6 @@ function _3 () {
         . . . . .
         `)
 }
-input.onSound(DetectedSound.Loud, function () {
-    zatreseni()
-})
 function _4 () {
     basic.showLeds(`
         . . . . .
@@ -84,8 +85,3 @@ function _1 () {
         . . . . .
         `)
 }
-let cislo = 0
-input.setSoundThreshold(SoundThreshold.Loud, 180)
-basic.forever(function () {
-	
-})
