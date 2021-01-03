@@ -9,7 +9,7 @@ function _7 () {
         `)
 }
 function zatreseni () {
-    cislo = randint(1, 6)
+    cislo = randint(1, 8)
     if (cislo == 1) {
         _1()
     } else if (cislo == 2) {
@@ -25,7 +25,7 @@ function zatreseni () {
     } else if (cislo == 7) {
         _7()
     } else {
-    	
+        _8()
     }
 }
 function _2 () {
@@ -70,6 +70,15 @@ function _3 () {
         . . # . .
         . # . . .
         . . . . .
+        `)
+}
+function _8 () {
+    basic.showLeds(`
+        . . # . .
+        . . # # .
+        # . # . .
+        # # # # #
+        . # # # .
         `)
 }
 function _4 () {
